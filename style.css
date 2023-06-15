@@ -1,0 +1,266 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background: ghostwhite;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+@media (min-width: 100px){
+    .section1{
+        background: rgb(1, 1, 48);
+        height: 105em;
+        z-index: 0;
+    }
+    .navbar{
+        font-size: 50px;
+        position: fixed;
+        text-align: center;
+        background: rgba(21, 2, 73, 0.514);
+        width: 100%;
+        border: 2.5px solid grey;
+        color: red;
+        font-family: 'Roboto italic';
+    }
+    .sidebar{
+        position: fixed;
+        left: -490px;
+        width: 450px;
+        top: 210px;
+        height: 60%;
+        background-color: ghostwhite;
+        color: black;
+        font-size: 40px;
+        line-height: 65px;
+        padding-left: 40px;
+        transition: all .5s ease;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    ul li:hover{
+        background: red;
+    }
+    ul a{
+        text-decoration: none;
+        color: black;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1p solid black;
+        transition: .4s;
+    }
+    ul li:hover a{
+        padding: 50px;
+        cursor: pointer;
+    }
+    #check{
+        display: none;
+    }
+    label #bars-icon, label #cancel-icon{
+        position: fixed;
+        cursor: pointer;
+        background: #042331;
+        border-radius: 3px;
+        
+    }
+    label #bars-icon{
+        right: 150px;
+        top: 25px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+    }
+    label #cancel-icon{
+        z-index: 1;
+        left: -500px;
+        top: 17px;
+        font-size: 40px;
+        color: white;
+        transition: all;
+    }
+    #check:checked ~ .sidebar{
+        left: 40px;
+        
+    }
+    #check:checked ~ label #bars-icon{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel-icon{
+        left: 800px;
+        
+    }
+    .name-container{
+        margin-top: 7em; 
+        position: absolute;
+        font-size: 55px;
+        color: white;
+        margin-left: 2em;
+    }
+    .name-title{
+        color: red;
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+    .name-container h2{
+        margin-top: 10px;
+        font-size: 100px;
+    }
+    .job-title{
+        margin-top: -1em;
+        font-size: 70px;
+        margin-bottom: 0px;
+    }
+    .skills{
+        margin-top: 0.5em;
+    }
+    button{
+        width: 5em;
+        height: 2em;
+        font-size: 50px;
+        background-color: transparent;
+        border: 5px solid red;
+        border-radius: 10px;
+        &:hover{
+            background: red;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+    .section2{
+        height: 150em;
+        
+    }
+    .about-me-container,
+    .skills-container,
+    .section4{
+        font-size: 50px;
+        margin-left: 2em;
+        width: 80%;
+        padding-top: 150px;
+    }
+    .skills-container span{
+        color: white;
+    }
+    .about-me-container h3,
+    .skills-container h3,
+    .section4 h3{
+        color: red;
+    }
+    .about-me-container span,
+    .section4 span{
+        color: black;
+    }
+    .section3{
+        height: 220em;
+        background:rgb(1, 1, 48);
+        color: white;
+       
+    }
+     #github-icon{
+        width: 20vh;
+        height: 20vh;
+        background-color: white;
+    }
+  
+    .section4{
+        height: 45em;
+    }
+    .box-container{
+        margin-top: 55px;
+        height: 23%;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 30px;
+        background: white;
+        font-size: 45px;
+        padding-left: 40px;
+        &:hover{
+            background: red;
+            .html-css-container span{
+              color: white;
+            }
+        }
+    }
+    .box-container h4{
+        margin: 0;
+        padding-top: 45px;
+    }
+    .box-container p{
+        width: 80%;
+    }
+    .html-css-container span{
+        color: red;
+    }
+    footer{
+        background: rgb(1, 1, 48);
+        height: 30em; 
+    }
+    .footer-container{
+        padding-top: 80px;
+    }
+    footer p, 
+    footer h4{
+        margin: 0;
+        color: white;
+        font-family: sans-serif;
+        
+    }
+    footer h4{
+         font-size: 50px; 
+         margin-left: 5em;
+    }
+    footer p{
+        font-size: 35px;
+        padding-top: 9px;
+        margin-left: 7em;
+    }
+    .footer-icon-container{
+        margin-left: 8em;
+    }
+    footer i{
+        color: white;
+        border: 1px solid white;
+        border-radius: 36px;
+        border-width: 10px;
+        background-color: white;
+        font-size: 50px;
+        margin-left: 40px;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .email-adress{
+        margin-top: 40px;      
+        padding-left: 2em;
+        font-size: 40px;
+    }
+    .email-adress a{
+        text-decoration: none;
+        color: white;
+        font-family: italic;
+    }
+
+    .tablet-view{
+        display: none;
+    }
+    #box-project-academic3{
+        display: none;
+    }
+    .tablet-footer{
+        display: none;
+    }
+}
+
