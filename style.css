@@ -13,7 +13,7 @@ html{
 
 @media (min-width: 100px){
     .section1{
-        background: rgb(1, 1, 48);
+        background: black;
         height: 105em;
         z-index: 0;
     }
@@ -21,7 +21,7 @@ html{
         font-size: 50px;
         position: fixed;
         text-align: center;
-        background: rgba(21, 2, 73, 0.514);
+        background: rgba(62, 62, 63, 0.377);
         width: 100%;
         border: 2.5px solid grey;
         color: red;
@@ -166,7 +166,7 @@ html{
     }
     .section3{
         height: 220em;
-        background:rgb(1, 1, 48);
+        background:black;
         color: white;
        
     }
@@ -206,7 +206,7 @@ html{
         color: red;
     }
     footer{
-        background: rgb(1, 1, 48);
+        background: black;
         height: 30em; 
     }
     .footer-container{
