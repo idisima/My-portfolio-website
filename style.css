@@ -124,6 +124,7 @@ html{
         margin-top: 0.5em;
     }
     button{
+        display: none;
         width: 5em;
         height: 2em;
         font-size: 50px;
